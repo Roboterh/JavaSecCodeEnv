@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ROUT redirect</title>
+</head>
+<body>
+    <h2>欢迎来到RoboTerh设计的lj路由跳转</h2>
+    <form action="/redirect" method="get">
+        <table>
+            <tr>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <th>反序列化漏洞</th>
+                        </tr>
+                        <tr>
+                            <td>fastjson</td>
+                            <td><input type="radio" name="rout" value="/deserializer/fastjson"></td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td>
+                    <table border="1">
+                        <tr>
+                            <th>SSTI</th>
+                        </tr>
+                        <tr>
+                            <td>Thymeleaf</td>
+                            <td><input type="radio" name="rout" value="/SSTI/Thymeleaf"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <th>SQL注入</th>
+                        </tr>
+                        <tr>
+                            <td>postgressql JDBC</td>
+                            <td><input type="radio" name="rout" value="/PostgreSQL/JDBC"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <input type="submit">
+    </form>
+</body>
+</html>

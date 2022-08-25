@@ -1,0 +1,4 @@
+com\roboterh\fastjsondemo\config\JsonConfig.class
+com\roboterh\fastjsondemo\controller\UserController.class
+com\roboterh\fastjsondemo\pojo\User.class
+com\roboterh\fastjsondemo\Application.class
