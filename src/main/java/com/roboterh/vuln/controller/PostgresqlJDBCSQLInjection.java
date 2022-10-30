@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -15,6 +16,7 @@ import java.sql.Statement;
 public class PostgresqlJDBCSQLInjection {
 
     @GetMapping("/JDBC")
+    @ResponseBody
     public String index() {
         return "访问/PostgreSQL/exp路由，传入参数url为JDBC连接串, 参数dbname为创建的表名";
     }
